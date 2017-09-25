@@ -59,6 +59,13 @@ public class LaboonCoinTest {
     }
 	    
     // TODO - PUT YOUR SIX TESTS HERE
-    
+
+    // Testing that the hash() function outputs the correct hash
+    @Test
+    public void testHash1(){
+        int result = _l.hash("bill");
+        int expected = 0x53c4142c;
+        assertEquals(expected, result);
+    }
     
 }
