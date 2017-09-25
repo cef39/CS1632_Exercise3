@@ -81,8 +81,8 @@ public class LaboonCoin {
 
 		public int hash(String data) {
 
-			for(data == null || data.length() == 0){
-				return -1;
+			if(data == null || data.length() == 0){
+				return 0x00989680;
 			}
 
 			int n = 10000000;
@@ -112,6 +112,11 @@ public class LaboonCoin {
 		 */
 
 		public boolean validHash(int difficulty, int hash) {
+
+                if (difficulty < 0 || difficulty > 8 ){
+
+                }
+
 				String hex =  String.format("%08x", hash);
 				for(int i = 0; i<difficulty; i++){
 					if(hex.charAt(i) != '0'){

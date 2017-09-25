@@ -59,6 +59,6 @@ public class LaboonCoinTest {
     }
 	    
     // TODO - PUT YOUR SIX TESTS HERE
-
+    
     
 }
