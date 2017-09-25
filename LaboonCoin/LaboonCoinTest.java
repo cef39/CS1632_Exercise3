@@ -67,5 +67,14 @@ public class LaboonCoinTest {
         int expected = 0x53c4142c;
         assertEquals(expected, result);
     }
+
+
+    // Testing that passing a null value returns the correct hex value, specified by Laboon
+    @Test
+    public void testNullStringHash(){
+        int result = _l.hash(null);
+        int expectedValue = 0x00989680;
+        assertEquals(expectedValue, result);
+    }
     
 }
