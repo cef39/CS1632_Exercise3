@@ -80,7 +80,10 @@ public class LaboonCoin {
 		 */
 
 		public int hash(String data) {
-
+			
+			for(data == null || data.length() == 0){
+				return -1;
+			}
 
 			int n = 10000000;
 
