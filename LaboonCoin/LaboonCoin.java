@@ -80,7 +80,7 @@ public class LaboonCoin {
 		 */
 
 		public int hash(String data) {
-			
+
 			for(data == null || data.length() == 0){
 				return -1;
 			}
@@ -112,8 +112,13 @@ public class LaboonCoin {
 		 */
 
 		public boolean validHash(int difficulty, int hash) {
-	// TODO - CHECK FOR VALID HASHES
-	return false;
+				String hex =  String.format("%08x", hash);
+				for(int i = 0; i<difficulty; i++){
+					if(hex.charAt(i) != '0'){
+						return false;
+					}
+				}
+				return true;
 		}
 
 		/**
