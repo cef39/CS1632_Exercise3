@@ -114,7 +114,7 @@ public class LaboonCoin {
 		public boolean validHash(int difficulty, int hash) {
 
                 if (difficulty < 0 || difficulty > 8 ){
-
+                    System.out.println("Invalid difficulty level.");
                 }
 
 				String hex =  String.format("%08x", hash);

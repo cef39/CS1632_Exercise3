@@ -61,6 +61,7 @@ public class LaboonCoinTest {
     // TODO - PUT YOUR SIX TESTS HERE
 
     // Testing that the hash() function outputs the correct hash
+    // hash() test
     @Test
     public void testHash1(){
         int result = _l.hash("bill");
@@ -70,6 +71,7 @@ public class LaboonCoinTest {
 
 
     // Testing that passing a null value returns the correct hex value, specified by Laboon
+    // hash() test
     @Test
     public void testNullStringHash(){
         int result = _l.hash(null);
@@ -78,6 +80,7 @@ public class LaboonCoinTest {
     }
 
     // Testing that passing an empty string returns the correct hex value
+    // hash() test
     @Test
     public void testEmptyStringHash(){
         int result = _l.hash("");
