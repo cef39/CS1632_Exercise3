@@ -92,7 +92,7 @@ public class LaboonCoinTest {
 		@Test
 		public void testInvalidDifficulty(){
 			 String message = "The testInValidDifficulty with -1 difficulty level returned false (invalid difficulty)";
-			 String hashValue = _l.hash("Bill");
+			 int hashValue = _l.hash("Bill");
 			 boolean result = _l.validHash(-1,hashValue);
 			 assert result : message;
 		}
